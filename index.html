@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Adarsh Info</title>
+
+</head>
+
+<body>
+  <!-- your content here... -->
+  
+  <div id="root"></div>
+  
+ <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script >
+    const element = React.createElement(
+  'h1',
+  {className: 'greeting'},
+  'Hello, world!'
+);
+    ReactDOM.render(
+  element,
+  document.getElementById('root')
+);</script>
+</body>
+</html>
