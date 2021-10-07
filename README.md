@@ -1,2 +1,1 @@
-# adarshKolluru.github.io
-Personal info
+# Personal Page
