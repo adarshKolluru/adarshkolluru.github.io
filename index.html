@@ -1,23 +1,22 @@
-<!doctype html>
+---
+layout: default
+---
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="home">
 
-  <title>Adarsh Info</title>
+  <h1 class="page-heading">Posts</h1>
 
-</head>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-<body>
-  <!-- your content here... -->
-  
-  <div id="root"></div>
-  
- <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <script type="text/javascript" src="main.js"></script>
-  <script >
-   </script>
-</body>
-</html>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+
+</div>

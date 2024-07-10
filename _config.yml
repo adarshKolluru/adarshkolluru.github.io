@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Adarsh K
 baseurl: "/site"
+# Build settings
+markdown: kramdown
